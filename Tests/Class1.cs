@@ -44,7 +44,7 @@ namespace proba
         }
         public void VerifyThatUserIsRegistered(string name)
         {
-            Assert.True(driver.FindElement(By.XPath($"//strong[text()='{name}']")).Displayed);
+            Assert.True(driver.FindElement(By.XPath($"//strong[text()='{name}']")).Displayed,"yus");
             driver.FindElement(By.Id(""));
         }
 
