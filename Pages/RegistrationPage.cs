@@ -10,6 +10,7 @@ namespace proba.Pages
 {
     public class RegistrationPage : BasePage
     {
+        private IWebElement registerButton => driver.FindElement(By.XPath("html/body/div[2]/header/div/div/div/div/div/a[2]"));
         public RegistrationPage(IWebDriver driver) : base(driver) { }
         public RegistrationPage RegisterUser(string email, string password, string name)
         {

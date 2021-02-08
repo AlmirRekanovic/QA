@@ -18,9 +18,6 @@ namespace proba.Tests
             RegistrationPage registerPage = loginPage.SelectRegisterOption();
             registerPage.RegisterUser("kollidsfds@sda.com", "Password!", "yyuyuyyuuyrtyu");
             registerPage.VerifyThatUserIsRegistered("yyuyuyyuuyrtyu");
-        //    VodicPage vodicPage = registerPage.VerifyThatUserIsRegistered("asdsadsa");
-        //    VerificatioPage verificationPage = vodicPage.GoToVerifyAccount();
-        //    verificationPage.VerifyAccount();
-        //}
+        }
     }
 }

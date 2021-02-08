@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using proba.Driver;
 using proba.Pages;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace proba.Tests
         [SetUp]
         public void Setup()
         {
-            driver = new ChromeDriver();
+            driver = new DriverManager().CreateDriver("firefox");
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl("https://olx.ba");
             basePage = new LoginPage(driver);
